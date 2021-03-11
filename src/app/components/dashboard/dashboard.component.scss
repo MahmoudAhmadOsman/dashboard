@@ -1,0 +1,348 @@
+.dashboard {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    /* Start of left_menu */
+    .left_menu {
+        // width: 15%;
+        // width: 250px;
+        width: 186px !important;
+
+        height: 100vh;
+        background-color: #13111f;
+        position: fixed;
+        // z-index: -1;
+        overflow: hidden;
+
+        .left_items {
+            // width: 150px;
+            // width: 100%;
+            width: auto;
+            margin: 25px auto;
+
+            .lett-content {
+                position: relative;
+                display: block;
+
+                .left_header {
+                    margin-left: 15px;
+
+                    h4 {
+                        // text-align: center;
+                        color: rgb(216, 212, 212);
+                        margin-bottom: 40px;
+                    }
+                }
+
+                .left_home {
+                    display: block;
+                    // margin-left: 10px;
+                    margin: auto 25px;
+
+                    ul {
+                        position: relative;
+
+                        li {
+                            list-style: none;
+
+                            i {
+                                width: 30px;
+                                height: 30px;
+                                line-height: 30px;
+                                color: #000;
+                                font-size: 22px;
+                                margin-bottom: 30px;
+                                margin-right: 10px;
+                                border-radius: 50%;
+                                background-color: #fff;
+                                text-align: center;
+                                font-weight: bold;
+                            }
+
+                            a {
+                                color: #7d7d7d
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    /*Start of menu burger */
+    .menu-burger-container {
+        // width: 10%;
+        width: 5%;
+        height: 100vh;
+        background-color: #efeef5;
+
+        // z-index: 11;
+        position: relative;
+        // margin-left: 188px;
+        margin: auto auto auto 187px;
+
+        .gear-icon {
+            position: fixed;
+            margin: 0px 25px;
+
+            .fa-bars {
+                width: 100%;
+                height: auto;
+                color: #222;
+                text-align: center;
+                font-size: 45px;
+                // margin-right: 10px;
+                cursor: pointer;
+                margin: 0px -8px;
+
+            }
+        }
+    }
+
+    /*End of menu burger */
+
+    /* End of left_menu */
+    /*Start of main_content_container*/
+    .main_content_container {
+        width: 80%;
+        // width: 85%;
+        height: auto;
+        background-color: #f5f5f5;
+        z-index: -2;
+
+        .dashboard_header {
+            position: relative;
+
+            h2 {
+                color: #333;
+            }
+        }
+
+
+        /*Start of dashboard-content*/
+        .dashboard-content {
+            width: 100%;
+            height: auto;
+            position: relative;
+            float: left;
+            display: block;
+            background-color: #fdf8f8;
+
+            .d-c-one {
+                position: relative;
+                width: 100%;
+                background-color: #eeeeee;
+                // margin: auto 100px;
+                color: #000;
+                padding: 20px;
+                font-weight: bold;
+                border-radius: 5px;
+
+
+                h4 {
+                    font-weight: bold;
+                }
+
+
+            }
+        }
+
+        /*End of dashboard-content*/
+    }
+
+    /*End of main_content_container*/
+
+}
+
+
+/*Start of Media Query for Dashboard */
+@media(min-width:1852px) {
+    .main_content_container {
+        width: 85% !important;
+
+
+    }
+
+}
+
+
+
+@media(max-width:768px) {
+    .dashboard {
+        display: block;
+        justify-content: space-around;
+
+        .left_menu {
+            // width: 75px;
+            width: 17% !important;
+            height: 100vh;
+            // background-color: blue;
+            // margin-left: -220px;
+            z-index: 3;
+            font-size: 10px;
+
+            .left_header {
+                position: relative;
+
+                h4 {
+                    font-size: 10px;
+                    text-align: left;
+                }
+            }
+
+            .left_home {
+                position: relative;
+
+                ul {
+                    position: relative;
+
+                    li {
+                        position: relative;
+
+                        a {
+                            color: #fff !important;
+                            font-size: 10px !important;
+                        }
+                    }
+                }
+
+                .fa {
+                    width: 20px !important;
+                    height: 20px !important;
+                    line-height: 20px !important;
+                    margin-bottom: 5px !important;
+                    margin-top: 5px !important;
+                    // margin-right: 10px;
+                    border-radius: 50%;
+                    background-color: #fff !important;
+                    text-align: center;
+                    font-weight: bold;
+                    font-size: 12px !important;
+
+
+
+                }
+            }
+        }
+    }
+
+    /*Start of buger icon*/
+    .menu-burger-container {
+        // width: 10%;
+        // width: 5%;
+        width: 150px;
+        background-color: yellow;
+        height: 100vh;
+        height: auto !important;
+        // margin-left: -100px;
+        position: relative;
+        margin: auto !important;
+        display: block;
+
+        .gear-icon {
+            position: relative !important;
+            // margin: 0px 25px;
+            margin: auto 160px !important;
+            display: block;
+
+            .fa-bars {
+                width: 100%;
+                height: auto;
+                color: rgb(3, 3, 3) !important;
+                font-size: 35px !important;
+                // margin-right: 10px;
+                cursor: pointer;
+                // margin: 0px -8px;
+                margin: auto !important;
+                float: right;
+
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+    }
+
+    /*End of buger icon*/
+
+    /*Start of main_content_container*/
+    .main_content_container {
+        position: relative;
+        width: 100%;
+        height: auto;
+
+        .dashboard_header {
+            width: 100%;
+            height: auto;
+            position: relative;
+
+
+            h2 {
+                font-size: 20px;
+                text-align: center;
+
+
+            }
+        }
+
+        .dashboard-content {
+            width: 80%;
+            height: 100vh;
+            display: block;
+            z-index: 4;
+            background-color: #00f !important;
+            margin: auto !important;
+            font-size: 12px !important;
+            margin-left: 65px !important;
+        }
+    }
+
+}
+
+/*End of Media Query for Dashboard */
+
+
+
+/*Start of Footer*/
+.main-footer {
+    width: auto;
+    position: relative;
+    background-color: #373434;
+    height: 50px;
+    line-height: 50px;
+    font-size: 12px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+
+    .copy-right {
+        text-align: center;
+
+        p {
+            color: #fff;
+        }
+    }
+}
+
+/*End of Footer*/
+
+// Click on burger menu set margin-let to -250px
+.dashboard_left_margin {
+    margin-left: -250px;
+    transition: all .8s ease-in-out;
+    -webkit-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -ms-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+}
